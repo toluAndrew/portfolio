@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>God in The Code - Tolu Taiwo</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+          sans-serif;
+        background-color: #f8f9fa;
+        color: #1a1a1a;
+      }
+
+      .container {
+        min-height: 100vh;
+        padding: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 1rem;
+        }
+      }
+
+      header {
+        margin-bottom: 3rem;
+      }
+
+      @media (max-width: 768px) {
+        header {
+          margin-bottom: 2rem;
+        }
+      }
+
+      .main-title {
+        font-size: 96px;
+        font-weight: 700;
+        color: #1a1a1a;
+        line-height: 96px;
+        margin-bottom: 2rem;
+        text-align: left;
+      }
+
+      @media (max-width: 768px) {
+        .main-title {
+          font-size: 48px;
+          line-height: 48px;
+        }
+      }
+
+      .description {
+        max-width: 700px;
+      }
+
+      .description-paragraph {
+        color: #666;
+        font-size: 17px;
+        line-height: 1.6;
+        margin-bottom: 8px;
+        text-align: left;
+      }
+
+      .description-paragraph:last-child {
+        margin-bottom: 0;
+      }
+
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        margin-bottom: 4rem;
+      }
+
+      @media (max-width: 768px) {
+        .projects-grid {
+          grid-template-columns: 1fr;
+          gap: 1rem;
+          margin-bottom: 3rem;
+        }
+      }
+
+      .project-card {
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease;
+        text-align: left;
+      }
+
+      .project-card:hover {
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+      }
+
+      .project-image {
+        width: 100%;
+        display: block;
+      }
+
+      .project-content {
+        padding: 1.5rem;
+        background-color: #ededed;
+      }
+
+      .project-title {
+        font-size: 24px;
+        font-weight: 700;
+        color: #1a1a1a;
+        margin-bottom: 0.05rem;
+        line-height: 1.3;
+      }
+
+      .project-subtitle {
+        font-size: 16px;
+        font-weight: 700;
+        color: #6b8e6b;
+        margin-bottom: 0.5rem;
+      }
+
+      .project-description {
+        color: #4a4a4a;
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+      }
+
+      .github-link {
+        color: #1a1a1a;
+        font-weight: 600;
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+
+      .github-link:hover {
+        color: #6b8e6b;
+      }
+
+      footer {
+        border-top: 2px solid #ccc;
+        padding-top: 3rem;
+        text-align: left;
+      }
+
+      .time-display {
+        font-size: 4rem;
+        font-weight: 700;
+        color: #1a1a1a;
+        line-height: 1;
+        margin-bottom: 0.5rem;
+      }
+
+      @media (max-width: 768px) {
+        .time-display {
+          font-size: 2.5rem;
+        }
+      }
+
+      .timezone-display {
+        font-size: 4rem;
+        font-weight: 700;
+        color: #1a1a1a;
+        line-height: 1;
+        margin-bottom: 2rem;
+      }
+
+      @media (max-width: 768px) {
+        .timezone-display {
+          font-size: 2.5rem;
+        }
+      }
+
+      .copyright {
+        font-size: 4rem;
+        font-weight: 700;
+        color: #1a1a1a;
+        line-height: 1;
+        margin-bottom: 2rem;
+      }
+
+      @media (max-width: 768px) {
+        .copyright {
+          font-size: 2rem;
+        }
+      }
+
+      .contact-info {
+        color: #666;
+        font-size: 0.875rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header>
+        <h1 class="main-title">God in The<br />Code</h1>
+        <div class="description">
+          <p class="description-paragraph">
+            A collection of software implementations of some of nature's most
+            fascinating systems by Tolu Taiwo.
+          </p>
+          <p class="description-paragraph">
+            These projects aim to bridge the domains of philosophy, computer
+            science, and biology - revealing the elegant design patterns that
+            connect them all.
+          </p>
+          <p class="description-paragraph">
+            These projects explore a thought experiment: What if the universe
+            was written in Java instead of assembled by cosmic chance? Each
+            implementation translates natural phenomena into clean, readable
+            code - demonstrating that biological 'miracles' are actually just
+            really good software architecture.
+          </p>
+          <p class="description-paragraph">
+            Consider this my tribute to the ultimate engineering team. 🚀
+          </p>
+        </div>
+      </header>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+        <div class="project-card">
+          <img
+            src="images/DNA.webp"
+            alt="Project Image"
+            class="project-image"
+          />
+          <div class="project-content">
+            <h3 class="project-title">The Dance of the Nucleotides</h3>
+            <h4 class="project-subtitle">DNA life simulation</h4>
+            <p class="project-description">
+              A comprehensive Java implementation modeling DNA as a
+              computational system, simulating fundamental biological processes
+              including replication, transcription, translation, mutation, and
+              cellular division.
+            </p>
+            <a
+              href="https://github.com/toluAndrew/Dna-simulation"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="github-link"
+            >
+              View on Github
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="images/baby.png"
+            alt="Project Image"
+            class="project-image"
+          />
+          <div class="project-content">
+            <h3 class="project-title">The Architecture of Becoming</h3>
+            <h4 class="project-subtitle">Embryogenesis simulation</h4>
+            <p class="project-description">
+              A sophisticated Java simulation that demonstrates how genetic
+              "code" executes to build complex multicellular organisms,
+              revealing striking parallels between embryonic development and
+              software engineering principles.
+            </p>
+            <a
+              href="https://github.com/toluAndrew/Embryogenesis-simulation"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="github-link"
+            >
+              View on Github
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="images/immunology.jpg"
+            alt="Project Image"
+            class="project-image"
+          />
+          <div class="project-content">
+            <h3 class="project-title">Guardians of the Biological Realm</h3>
+            <h4 class="project-subtitle">Immune response simulation</h4>
+            <p class="project-description">
+              A comprehensive Java simulation that models the human immune
+              system as a sophisticated biological security architecture. This
+              project demonstrates how nature implements pattern recognition,
+              adaptive learning, and distributed computing through biological
+              processes.
+            </p>
+            <a
+              href="https://github.com/toluAndrew/Immune-response-simulation"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="github-link"
+            >
+              View on Github
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="images/neural net.png"
+            alt="Project Image"
+            class="project-image"
+          />
+          <div class="project-content">
+            <h3 class="project-title">The Awakening of Thought</h3>
+            <h4 class="project-subtitle">
+              Biological neural network formation simulation
+            </h4>
+            <p class="project-description">
+              A Java simulation modeling the biological development of neural
+              networks from initial neurogenesis through functional circuit
+              formation. This educational project demonstrates how complex brain
+              structures emerge through self-organizing processes.
+            </p>
+            <a
+              href="https://github.com/toluAndrew/Neural-network-formation-sim"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="github-link"
+            >
+              View on Github
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <div class="time-display" id="time-display">00:00:00</div>
+        <div class="timezone-display">GMT</div>
+        <div class="copyright">Tolu Taiwo © 2025</div>
+        <div class="contact-info">Get in touch at: tolutaiwo76@yahoo.com</div>
+      </footer>
+    </div>
+
+    <script>
+      function updateTime() {
+        const now = new Date();
+        const timeString = now.toLocaleTimeString("en-GB", {
+          hour12: false,
+          timeZone: "GMT",
+        });
+        document.getElementById("time-display").textContent = timeString;
+      }
+
+      // Update time immediately
+      updateTime();
+
+      // Update time every second
+      setInterval(updateTime, 1000);
+    </script>
+  </body>
+</html>
